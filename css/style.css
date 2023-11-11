@@ -117,17 +117,23 @@ p {
 
 /* header section */
 .header {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
   padding: 32px 0;
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(5px);
 }
 
 .header .social-contacts svg {
   color: var(--color-brand-durk);
 }
 
-.header .social-contacts svg:hover,
+/* .header .social-contacts svg:hover,
 .footer .social-contacts svg:hover {
   fill: var(--color-brand-light);
-}
+} */
 
 .header-navigation {
   display: flex;
@@ -154,6 +160,7 @@ p {
 .header a {
   color: var(--color-brand-durk);
   font-size: 18px;
+  transition: color 0.2s;
 }
 
 .title .title--modeficator,
@@ -164,7 +171,14 @@ p {
 /* hero section */
 .hero {
   padding: 125px 0;
-  background-image: url('./../images/background_img.jpg');
+  background-image: linear-gradient(
+      89deg,
+      #fff 30.62%,
+      rgba(255, 255, 255, 0.85) 41.31%,
+      rgba(255, 255, 255, 0.19) 58.65%,
+      rgba(255, 255, 255, 0) 72.78%
+    ),
+    url('./../images/background_img.jpg');
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
@@ -197,6 +211,7 @@ p {
   font-weight: 600;
   padding: 16px 32px;
   margin-bottom: 14px;
+  transition: background-color 0.2s ease, color 0.2s ease;
 }
 
 .button:hover {
@@ -280,6 +295,7 @@ p {
   content: '';
   position: absolute;
   background-repeat: no-repeat;
+  animation: spin 1.5s infinite linear;
 }
 
 .about_img-first::before {
@@ -304,6 +320,16 @@ p {
   background-image: url(../images/Star1.svg);
   top: 0;
   left: 130px;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0);
+  }
+
+  to {
+    transform: rotate(1turn);
+  }
 }
 
 /* why_us section */
@@ -485,6 +511,7 @@ footer::before {
 .footer a {
   color: var(--color-defoult-white);
   font-size: 16px;
+  transition: color 0.2s;
 }
 
 .footer .social-contacts svg {
