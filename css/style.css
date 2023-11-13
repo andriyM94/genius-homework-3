@@ -204,7 +204,7 @@ p {
 
 .hero__title {
   color: var(--color-brand-light);
-  font-family: Play, serif;
+  font-family: Play, sans-serif;
   font-size: 140px;
   font-weight: 700;
   line-height: 81.5%;
@@ -587,7 +587,7 @@ footer::before {
 
 .modal__title {
   text-align: center;
-  font-family: Play serif;
+  font-family: Play, sans-serif;
   font-size: 64px;
   font-weight: 700;
   color: var(--color-defoult-white);
