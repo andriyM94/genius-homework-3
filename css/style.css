@@ -388,13 +388,22 @@ p {
   text-align: center;
 }
 
+.procedures_item img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  border-radius: 4px 120px;
+}
+
 .procedure_item-text {
   max-width: 150px;
   display: block;
 }
 
 .card {
-  border: 1px solid black; /*remove*/
   border-radius: 4px 120px;
   background-image: linear-gradient(
     180deg,
@@ -402,9 +411,9 @@ p {
     rgba(1, 28, 68, 0.73) 84.61%,
     var(--color-brand-durk) 101.39%
   );
-  /* flex-shrink: 0; */
   flex-basis: calc((100% - 32px) / 3);
   padding: 372px 77px 32px 115px;
+  position: relative;
 }
 
 /* slider */
