@@ -187,12 +187,7 @@
                 <span class="title--modeficator">безкоштовно</span><br />
                 та отримайте подарунок
               </h3>
-              <form
-                class="form"
-                name="contact-form"
-                autocomplete="off"
-                novalidate
-              >
+              <form class="form" name="contact-form" autocomplete="on">
                 <div class="form-field">
                   <label class="form-label visually-hidden" for="user-name"
                     >Ваше ім'я та прізвище</label
@@ -203,6 +198,8 @@
                     id="user-name"
                     name="user-name"
                     placeholder="Ваше ім'я та прізвище"
+                    required
+                    pattern="^[Є-ЯҐа-їґ]+\s[Є-ЯҐа-їґ]+$"
                   />
                 </div>
 
@@ -216,6 +213,8 @@
                     id="user-tel"
                     name="user-tel"
                     placeholder="Ваш номер телефону"
+                    required
+                    pattern="^\+380[0-9]{9}"
                   />
                 </div>
 
@@ -229,6 +228,7 @@
                     id="user-email"
                     name="user-email"
                     placeholder="Ваша електронна пошта"
+                    required
                   />
                 </div>
 
@@ -309,7 +309,7 @@
       </div>
     </footer>
 
-    <div class="backdrop">
+    <div class="backdrop is-hidden">
       <div class="modal bg-lines">
         <button class="modal-btn-close">close</button>
         <h2 class="modal__title">Замовити дзвінок</h2>
@@ -318,7 +318,7 @@
           <span class="title--modeficator">безкоштовно</span><br />
           та отримайте подарунок
         </h3>
-        <form class="form" name="contact-form" autocomplete="off" novalidate>
+        <form class="form" name="contact-form" autocomplete="on">
           <div class="form-field">
             <label class="form-label visually-hidden" for="user-name"
               >Ваше ім'я та прізвище</label
@@ -329,6 +329,8 @@
               id="user-name"
               name="user-name"
               placeholder="Ваше ім'я та прізвище"
+              required
+              pattern="^[Є-ЯҐа-їґ]+\s[Є-ЯҐа-їґ]+$"
             />
           </div>
 
@@ -342,6 +344,8 @@
               id="user-tel"
               name="user-tel"
               placeholder="Ваш номер телефону"
+              required
+              pattern="^\+380[0-9]{9}"
             />
           </div>
 
@@ -355,6 +359,7 @@
               id="user-email"
               name="user-email"
               placeholder="Ваша електронна пошта"
+              required
             />
           </div>
 
