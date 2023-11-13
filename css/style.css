@@ -596,8 +596,14 @@ footer::before {
 
 .modal-btn-close {
   position: absolute;
+  background-image: url(../images/close.svg);
+  background-color: transparent;
+  width: 32px;
+  height: 32px;
+  border: none;
   top: 42px;
   right: 42px;
+  cursor: pointer;
 }
 
 /* Bacground lines */
