@@ -63,7 +63,7 @@ ul {
 }
 
 body {
-  font-family: Robot, sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 400;
   font-size: 13px;
   color: var(--color-brand-durk);
@@ -97,7 +97,7 @@ p {
 }
 
 .title {
-  font-family: Play, sans-serif;
+  font-family: 'Play', sans-serif;
   font-size: 64px;
   font-weight: 700;
   color: var(--color-brand-durk);
@@ -204,7 +204,7 @@ p {
 
 .hero__title {
   color: var(--color-brand-light);
-  font-family: Play, sans-serif;
+  font-family: 'Play', sans-serif;
   font-size: 140px;
   font-weight: 700;
   line-height: 81.5%;
@@ -596,7 +596,7 @@ footer::before {
 
 .modal__title {
   text-align: center;
-  font-family: Play, sans-serif;
+  font-family: 'Play', sans-serif;
   font-size: 64px;
   font-weight: 700;
   color: var(--color-defoult-white);
